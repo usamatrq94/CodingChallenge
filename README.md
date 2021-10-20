@@ -2,8 +2,8 @@
 ## Installing depencencies:
 Dependencies for this program can be challenging since this only functions with pandas 0.25.3. Please uninstall pandas and reinstall this version.
 ```
-pip3 uninstall pandas
-pip3 install pandas==0.25.3
+pip uninstall pandas
+pip install pandas==0.25.3
 ```
 Once this done, please install json
 ```
