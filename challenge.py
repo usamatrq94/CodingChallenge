@@ -23,3 +23,5 @@ df_required = pd.json_normalize(
           ['sections', 'meetings', 'events','startTime'],
     ],errors='ignore'
 )
+
+print(df_required)
