@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-filepath = input("Enter your JSON file path ")
+file_path = input("Enter your JSON file path ")
 df = pd.read_json(r"response.json")
 
 # load data using Python JSON module
