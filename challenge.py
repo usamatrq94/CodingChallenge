@@ -1,7 +1,12 @@
 import json
+import pandas as pd
 
 filepath = input("Enter your JSON file path ")
+df = pd.read_json(r"response.json")
 
+# load data using Python JSON module
+with open(file_path,'r') as f:
+    data = json.loads(f.read())
 df_nested_list = pd.json_normalize(data, record_path =['dates'])
 
 df_required = pd.json_normalize(
