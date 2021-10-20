@@ -1,5 +1,5 @@
 # CodingChallenge
 ## Installing depencencies:
-pip install jsonlib
+pip install json
 ## Running file
 python challenge.py
