@@ -9,6 +9,10 @@ Once this done, please install json
 ```
 pip install json
 ````
+Lastly install datetime
+```
+pip install DateTime
+```
 ## Running file
 Once dependencies are installed, please run file using command below:
 ```
