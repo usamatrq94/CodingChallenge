@@ -7,7 +7,7 @@ pip install pandas==0.25.3
 ```
 Once this done, please install json
 ```
-pip install json
+pip install json==2.0.9
 ````
 Lastly install datetime
 ```
