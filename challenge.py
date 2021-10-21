@@ -36,4 +36,4 @@ result.drop(['Region'], axis=1, inplace=True)
 #Required dictionary
 dict = result.to_dict('records')
 
-print(dict)
+print (json.dumps(dict, sort_keys=True, indent=4))
