@@ -31,9 +31,16 @@ df['startTime'] = df['startTime'].dt.strftime('%Y-%m-%dT%H:%m:%S')
 #Renaming columns and droping unnecessary data
 df.columns = ["Region", "MeetingID", "MeetingName", "EventID", "RaceNumber", "RaceLink", "Distance", "StartTime"]
 result = df[df['Region'] == 'Australia']
-result.drop(['Region'], axis=1, inplace=True)
+
+#Removing this use case for writing relevant Unit tests
+#result.drop(['Region'], axis=1, inplace=True)
 
 #Required dictionary
 dict = result.to_dict('records')
 
+#Saving JSON results file to disk
+with open('results.json', 'w') as json_file:
+    json.dump(dict, json_file)
+    
+#Printing results to console    
 print (json.dumps(dict, sort_keys=True, indent=4))
