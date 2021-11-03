@@ -12,7 +12,7 @@ import json
 import re
 from operator import itemgetter
 
-# Loading JSON file
+# Loading JSON file. Alternatively I can convert my challenge.py into a function and call it here
 with open('./data.json','r') as jsonfile:
     results = json.loads(jsonfile.read())
 
